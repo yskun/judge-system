@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="GBK"/>
+    <title>创建管理员</title>
+</head>
+<head th:insert="~{Shared/_layout::head}"></head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<body>
+<div th:insert="~{Shared/_layout::nav}"></div>
+<div class="container body-content">
+
+
+    <h2>创建管理员</h2>
+
+
+    <form th:action="@{/manage/admin/new}" action="/User/Create" method="post">
+        <div class="form-horizontal">
+        <h4>managerinfo</h4>
+        <hr/>
+
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Email">邮箱</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Email" name="Email" type="text" value="" />
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Tel">电话</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Tel" name="Tel" type="text" value="" />
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Password">密码</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line password" id="Password" name="Password" type="password" value="" />
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default"/>
+            </div>
+        </div>
+    </div>
+    </form>
+    <div>
+        <a href="/manage/admin">Back to List</a>
+    </div>
+
+
+    <hr/>
+    <footer>
+        <p>&copy; 2017</p>
+    </footer>
+</div>
+<div th:insert="~{Shared/_layout::script}"></div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>举报页面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="http://pv.sohu.com/cityjson"></script>
+    <script src="report.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form class="form-horizon tal report-form">
+    <h1>举报流程</h1>
+    <h3>当前举报的网页信息</h3>
+    <div class="form-group">
+        <label for="address" class="col-sm-2 control-label">网页地址</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control " id="address" name="Url" value="" placeholder="address" readonly>
+        </div>
+        <div class="col-sm-1">
+            <div type="button" id="url" class="btn btn-default" data-dismiss="modal">访问</div>
+        </div>
+    </div>
+
+    <h3>您将会被收集的信息</h3>
+    <div class="col-sm-2 control-label">收集信息</div>
+    <br>
+    <div class="col-sm-12" id="report-message">
+        <div class="form-group">
+            <label for="ip_address" class="col-sm-1 control-label">IP地址</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="ip_address" name="IpAddress" placeholder="IP地址">
+            </div>
+            <br>
+            <br>
+            <label for="region" class="col-sm-1 control-label">区域</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="region" name="Region" placeholder="区域" readonly>
+            </div>
+        </div>
+        <br>
+        <h5>我们将会保证您所提交的数据不会被第三方获取</h5>
+    </div>
+
+    <br>
+
+    <h3>请帮助我们提供以下信息</h3>
+    <div class="form-group">
+        <label for="report-reason" class="col-sm-2 control-label">举报类型</label>
+        <div class="col-sm-10">
+            <select class="form-control" name="ReportReson" id="report-reason">
+                <option>色情</option>
+                <option>赌博</option>
+                <option>政治</option>
+                <option>暴力</option>
+                <option>其他</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="report-detail" class="col-sm-2 control-label">详情</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="report-detail" name="ReportDetail" rows="3"></textarea>
+            <h5>请详细填写您所发现的问题以便管理员处理</h5>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-default" id="send_btn">发送</button>
+        </div>
+    </div>
+</form>
+
+<div class="module" id="send_page">
+    <div id="send_module">
+        <span class="glyphicon glyphicon-send send_logo" aria-hidden="true"></span>
+        <p>
+            <h1>正在发送</h1>
+        </p>
+    </div>
+    <div id="error_module">
+        <span class="glyphicon glyphicon-remove send_logo" aria-hidden="true"></span>
+        <p>
+            <h1>错误</h1>
+            <h5>请不要多次提交数据</h5>
+
+        </p>
+        <div class="btn btn-primary close_btn">返回首页</div>
+    </div>
+
+    <div id="finished_module">
+        <span class="glyphicon glyphicon-ok send_logo" aria-hidden="true"></span>
+        <p>
+            <h1>完毕</h1>
+        </p>
+        <div class="btn btn-primary close_btn">返回首页</div>
+    </div>
+</div>
+</body>
+</html>

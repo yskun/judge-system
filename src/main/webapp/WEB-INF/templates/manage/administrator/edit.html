@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="GBK"/>
+    <title>管理员信息修改</title>
+</head>
+<head th:insert="~{Shared/_layout::head}"></head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<body>
+<div th:insert="~{Shared/_layout::nav}"></div>
+
+<div class="container body-content">
+
+
+    <h2>管理员信息修改</h2>
+
+
+    <form th:action="'/manage/admin/edit/'+${{users.getEmail()}}+'/'" action="/User/Edit?email=sa%40itscda.com" method="post">
+        <div class="form-horizontal">
+        <h4>managerinfo</h4>
+        <hr/>
+
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Email">邮箱</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Email" name="Email" type="text" th:value="${{users.getEmail()}}" value="sa@itscda.com" readonly/>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Tel">电话</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Tel" name="Tel" type="text"  th:value="${{users.getTel()}}"  value="13257563388" />
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Password">密码</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line password" id="Password" name="Password"  th:value="${{users.getPassword()}}"  type="password" value="123456" />
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default"/>
+            </div>
+        </div>
+    </div>
+    </form>
+    <div>
+        <a href="/manage/admin">Back to List</a>
+    </div>
+
+
+    <hr/>
+    <footer>
+        <p>&copy; 2017</p>
+    </footer>
+</div>
+<div th:insert="~{Shared/_layout::script}"></div>
+
+</body>
+</html>

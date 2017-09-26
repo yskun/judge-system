@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="GBK">
+    <title>主页</title>
+</head>
+<head th:insert="~{Shared/_layout::head}"></head>
+<body>
+    <div th:insert="~{Shared/_layout::nav}"></div>
+    <div class="container body-content">
+        <div class="jumbotron">
+            <h1>欢迎使用举报管理系统</h1>
+            <p class="lead">
+                举报系统是由以下人员开发
+                <br/>1401030067 陆洋
+
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>管理记录</h2>
+                <p>查看网页管理记录</p>
+                <p><a class="btn btn-default" href="/Manage">查看记录</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>管理举报内容</h2>
+                <p>管理被举报内容。</p>
+                <p><a class="btn btn-default" href="/Manage">管理举报内容</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>管理员管理</h2>
+                <p>删除、添加、修改管理员。</p>
+                <p><a class="btn btn-default" href="/User">管理员</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div th:insert="~{Shared/_layout::script}"></div>
+</body>
+</html>

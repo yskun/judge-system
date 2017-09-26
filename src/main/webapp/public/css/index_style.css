@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  font-family: "Microsoft YaHei UI Light", serif;
+}
+.containerMo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.containerMo .background {
+  position: static;
+  width: 100%;
+  height: 85%;
+  background-size: cover;
+}
+.tab {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  z-index: 1000;
+  background-color: #fff;
+  cursor: pointer;
+}
+.tab h6 {
+  text-align: center;
+}
+.tab h3 {
+  text-align: center;
+  margin-top: -30px;
+}
+@media screen and (max-width: 1337px) {
+  .containerMo {
+    zoom: 80%;
+  }
+  .tab {
+    zoom: 80%;
+  }
+}
+#b_1 .layer {
+  position: absolute;
+  background: #000;
+  opacity: 0.53;
+  width: 100%;
+  height: 85%;
+  z-index: 0;
+}
+#b_1 .func {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+}
+#b_1 .func #Logo {
+  width: 203px;
+  height: 34px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+#b_1 .func #knowYou {
+  position: relative;
+  top: 30%;
+  width: 24%;
+  height: 192px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: auto;
+  margin-left: 30px;
+}
+#b_1 .func .content {
+  line-height: 1.334;
+  margin: 60px auto;
+  text-align: center;
+  z-index: 100;
+}
+#b_1 .func #c_1 {
+  margin-top: -50px;
+  color: #36e37f;
+}
+#b_1 .func #c_2 {
+  color: #cccccc;
+}
+#b_1 .func .btn-index {
+  width: 80px;
+  padding: 7px 7px;
+  background-color: #194f90;
+  margin: 15px auto;
+}
+#b_1 .func .fontbottom {
+  position: absolute;
+  color: #cccccc;
+  margin: 30px;
+  bottom: 0;
+}
+#b_2 .photo_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#b_2 .photo_box ul {
+  width: 100%;
+  height: 85%;
+  float: left;
+  list-style-type: none;
+  padding: 0;
+}
+#b_2 .photo_box ul li {
+  float: left;
+  width: 33.3333333%;
+  height: 100%;
+}
+#b_2 .photo_box ul li div {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1000;
+}
+#b_2 .photo_box ul li div #iphone {
+  bottom: -83%;
+}
+#b_2 .photo_box ul li div #hand {
+  bottom: -83%;
+}
+#b_2 .photo_box ul li div .pic_center {
+  position: relative;
+  bottom: -85%;
+  width: 100%;
+  height: 71px;
+}
+#b_2 .photo_box ul li div .pic_center div {
+  cursor: pointer;
+  width: 85px;
+  height: 71px;
+  margin: 0 auto;
+}
+#b_2 .photo_box ul li div .pic_center .iphone {
+  width: 56px;
+  height: 101px;
+}
+#b_2 .photo_box ul li div .pic_center .hand {
+  width: 70px;
+  height: 99px;
+}
+#b_2 .page2font {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#b_2 .page2font div {
+  width: 100%;
+  color: #e9e8e8;
+}
+#b_2 .page2font div p {
+  text-align: center;
+}
+#b_2 .page2font div .u12 {
+  font-size: 31px;
+  margin-bottom: 0;
+}
+#b_2 .page2font div .u13 {
+  font-size: 42px;
+  margin-bottom: 300px;
+}
+.gototop {
+  border-width: 3px;
+  border-color: snow;
+  border-style: solid;
+  border-radius: 8px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 127px;
+  height: 40px;
+  z-index: 2000;
+  text-align: center;
+  color: snow;
+  cursor: pointer;
+  display: none;
+}

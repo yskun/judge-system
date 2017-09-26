@@ -1,0 +1,205 @@
+
+*{
+  margin: 0;
+  font-family: "Microsoft YaHei UI Light", serif;
+}
+
+.containerMo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .background{
+    position: static;
+    width:100%;
+    height:85%;
+    background-size: cover;
+  }
+}
+
+.tab{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  z-index: 1000;
+  background-color: #fff;
+  cursor: pointer;
+  h6{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 1337px) {
+  .containerMo{
+    zoom: 80%;
+  }
+  .tab{
+    zoom: 80%;
+  }
+}
+
+////////////////////////////////////////////////////////
+#b_1{
+  .layer{
+    position: absolute;
+    background: #000;
+    opacity: 0.53;
+    width: 100%;
+    height: 85%;
+    z-index: 0;
+  }
+  .func{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    #Logo{
+      width: 203px;
+      height:34px;
+      position: absolute;
+      margin-top:30px;
+      margin-left: 30px;
+    }
+    #knowYou{
+      position: relative;
+      top:30%;
+      width: 24%;
+      height: 192px;
+      //zoom: 60%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: auto;
+      margin-left:30px;
+    }
+    .content{
+      line-height: 1.334;
+      margin:60px auto;
+      text-align: center;
+      z-index: 100;
+    }
+    #c_1{
+      margin-top: -50px;
+      color: #36e37f;
+    }
+    #c_2{
+      color: #cccccc;
+    }
+    .btn-index{
+      width: 80px;
+      padding: 7px 7px;
+      background-color: rgb(25, 79, 144);
+      margin: 15px auto;
+    }
+    .fontbottom{
+      position: absolute;
+      color: rgb(204, 204, 204);
+      margin: 30px;
+      bottom: 0;
+    }
+  }
+}
+
+#b_2{
+  .photo_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    ul{
+      width:100%;
+      height:85%;
+      float: left;
+      list-style-type:none;
+      padding: 0;
+      li{
+        float: left;
+        width: 33.3333333%;
+        height: 100%;
+        div{
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 1000;
+
+          #iphone
+          {
+            bottom: -83%;
+          }
+          #hand
+          {
+
+
+            bottom:-83% ;
+          }
+          .pic_center{
+            position: relative;
+            bottom: -85%;
+            width: 100%;
+            height: 71px;
+            div{
+              cursor: pointer;
+              width:85px;
+              height: 71px;
+              margin: 0 auto;
+            }
+
+            .iphone{
+              width:56px;
+              height: 101px;
+            }
+            .hand{
+              width:70px;
+              height: 99px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .page2font{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    div{
+      width: 100%;
+      color: #e9e8e8;
+
+      p{
+        text-align: center;
+      }
+      .u12{
+        font-size: 31px;
+        margin-bottom: 0;
+      }
+      .u13{
+        font-size: 42px;
+        margin-bottom: 300px;
+
+      }
+    }
+
+  }
+}
+
+.gototop{
+    border-width: 3px;
+    border-color: snow;
+    border-style: solid;
+    border-radius: 8px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 127px;
+    height: 40px;
+    z-index: 2000;
+    text-align: center;
+  color: snow;
+  cursor: pointer;
+  display: none;
+}

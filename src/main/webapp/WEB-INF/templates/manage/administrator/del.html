@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="GBK"/>
+    <title>删除管理员</title>
+</head>
+<head th:insert="~{Shared/_layout::head}"></head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<body>
+<div th:insert="~{Shared/_layout::nav}"></div>
+
+<div class="container body-content">
+
+
+    <h2>删除管理员</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>管理员信息</h4>
+        <hr/>
+        <dl class="dl-horizontal">
+            <dt>
+                邮箱
+            </dt>
+
+            <dd  th:text="${users.getEmail()}">
+                sa@itscda.com
+            </dd>
+
+            <dt >
+                电话
+            </dt>
+
+            <dd  th:text="${users.getTel()}">
+                13257563388
+            </dd>
+
+            <dt>
+                密码
+            </dt>
+
+            <dd  th:text="${users.getPassword()}">
+                123456
+            </dd>
+
+        </dl>
+
+        <form th:action="'/manage/admin/del/'+${users.getEmail()}+'/'" action="/User/Delete?email=sa%40itscda.com" method="post">
+            <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default"/> |
+            <a href="/manage/admin">返回列表</a>
+        </div>
+        </form></div>
+    <hr/>
+    <footer>
+        <p>&copy; 2017</p>
+    </footer>
+</div>
+<div th:insert="~{Shared/_layout::script}"></div>
+
+</body>
+</html>

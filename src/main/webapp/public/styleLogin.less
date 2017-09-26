@@ -1,0 +1,137 @@
+@form-background-color:rgb(43, 67, 146);
+@font-color:#fdfdfd;
+
+
+.font-style{
+  font-family: "Microsoft YaHei UI Light", serif;
+  color:@font-color;
+}
+
+
+.form-control, .select2-search input[type=text] {
+  height: 42px;
+  padding: 8px 12px;
+  font-family: "Microsoft YaHei UI Light",Lato,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  color: @font-color;
+  border: 0;
+  background-color: @form-background-color;
+  border-bottom: 2px solid #bdc3c7;
+  border-radius: 0;
+}
+
+.btn-primary {
+  color: #2b4392;
+  background-color: #cccccc;
+}
+
+
+/////////////////////////////////////////////////
+.report-form{
+  margin: 0 10%;
+  background-color: #f7f7f7;
+  height: 100%;
+  padding: 30px;
+}
+
+body{
+  position: absolute;
+  background-color: #1c2665;
+  height: 100%;
+  width: 100%;
+
+}
+*{
+  font-family: "Microsoft YaHei UI Light",sans-serif;
+}
+
+.module{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#send_page{
+  top:0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  background-color: #f7f7f7;
+  text-align: center;
+  .send_logo{
+    margin-top: 300px;
+    font-size: 100px;
+  }
+  #finished_module{
+    display: none;
+  }
+}
+
+
+//form_layer///////////////////////////////////////////////////
+
+.form_layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  form {
+    .font-style;
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+    padding: 10px 30px 33px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: @form-background-color;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    .form_module_box {
+      position: static;
+      margin: 40px 0;
+      .module {
+        position: inherit;
+        input[type=text],input[type=password]{
+          width: 500px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .btn-next {
+    width: 77px !important;
+    font-size: 15px;
+    float: right;
+    padding: 6px 5px;
+  }
+}
+
+h2,.h2{
+  font-size: 40px;
+}
+
+h1,.h1{
+  font-size: 50px;
+}
+
+
+h4,.h4{
+  font-size:22px;
+}
+
+h5,.h5{
+  font-size:20px;
+}
+
+h6,.h6{
+  font-size:15px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1.1;
+  color: inherit;
+}
+

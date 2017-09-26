@@ -1,0 +1,41 @@
+.report-form {
+    background-color: #f7f7f7;
+    height: 100%;
+    margin: 0 10%;
+    padding: 30px;
+}
+
+.report-form * { margin: 2px 0; }
+
+body {
+    background-color: #1c2665;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+* { font-family: "Microsoft YaHei UI Light", sans-serif; }
+
+.module {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#send_page {
+    background-color: #f7f7f7;
+    display: none;
+    left: 0;
+    text-align: center;
+    top: 0;
+    z-index: 100;
+}
+
+#send_page .send_logo {
+    font-size: 100px;
+    margin-top: 300px;
+}
+
+#send_page #finished_module { display: none; }
+
+#send_page #error_module { display: none; }

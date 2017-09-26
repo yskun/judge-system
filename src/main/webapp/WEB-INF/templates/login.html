@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登陆</title>
+    <link rel="stylesheet" th:href="@{/public/css/bootstrap.min.css}"  href="~/res/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/public/css/flat-ui.min.css}"  href="~/res/css/flat-ui.min.css">
+    <link th:href="@{/public/styleLogin.css}" href="~/styleLogin.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="form_layer">
+    <form method="post" th:action="@{/login}">
+        <p class="form_title h1">登录</p>
+        <p class="form_description-front h6">管理内容</p>
+        <div class="form_module_box">
+            <div class="form_module" id="f_1_module_1">
+                <p class="module_title h5"></p>
+                <p class="module_description-front h6"></p>
+                <div class="module">
+
+                    <input class="form-control" id="Email" name="username" placeholder="用户名" type="text" value="">
+                    <input class="form-control" id="Password" name="password" placeholder="密码" type="password">
+                    <p class="module_description-back h6"></p>
+                </div>
+            </div>
+        </div>
+
+        <p class="form_description-back h6"></p>
+
+        <input type="submit" value="登陆" class="btn btn-block btn-xs btn-primary btn-next">
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="GBK"/>
+    <title>管理员详情</title>
+</head>
+
+<head th:insert="~{Shared/_layout::head}"></head>
+
+<body>
+
+    <div th:insert="~{Shared/_layout::nav}"></div>
+
+<div class="container body-content">
+
+
+    <h2>管理员详情</h2>
+
+    <div>
+        <h4>managerinfo</h4>
+        <hr/>
+        <dl  class="dl-horizontal">
+            <dt>
+                邮箱
+            </dt>
+
+            <dd  th:text="${users.getEmail()}">
+                sa@itscda.com
+            </dd>
+
+            <dt >
+                电话
+            </dt>
+
+            <dd  th:text="${users.getTel()}">
+                13257563388
+            </dd>
+
+            <dt>
+                密码
+            </dt>
+
+            <dd  th:text="${users.getPassword()}">
+                123456
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        <a th:href="'/manage/admin/edit/'+${users.getEmail()}+'/'" href="/User/Edit?email=sa%40itscda.com">Edit</a> |
+        <a href="/manage/admin">Back to List</a>
+    </p>
+    <hr/>
+    <footer>
+        <p>&copy; 2017</p>
+    </footer>
+</div>
+
+    <div th:insert="~{Shared/_layout::script}"></div>
+
+
+</body>
+</html>

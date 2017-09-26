@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width"/>
+    <title>@ViewBag.Title</title>
+    <link th:href="@{/public/css/bootstrap.css}" href="/Content/bootstrap.css" rel="stylesheet"/>
+    <link th:href="@{/public/css/Site.css}" href="/Content/site.css" rel="stylesheet"/>
+    <script th:src="@{/public/js/modernizr-2.6.2.js}" src="/Scripts/modernizr-2.6.2.js"></script>
+
+    <style>
+        * {
+            font-family: "Microsoft YaHei UI Light", sans-serif !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" th:fragment="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" th:href="@{/manage}" href="/">举报系统</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/manage}" href="/">主页</a></li>
+                <li><a href="/Manage">管理举报内容</a></li>
+                <li><a href="/WebState">网页管理</a></li>
+                <li><a th:href="@{/manage/admin}" href="/User">管理员</a></li>
+                <li><a href="/ManageLog">操作记录</a></li>
+                <li><form th:action="@{/logout}" th:method="post">
+                    <input class="btn btn-primary" type="submit" value="退出" style="padding-top: 15px; padding-bottom: 15px;"/>
+                </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div th:fragment="script">
+    <script th:src="@{/public/js/jquery-1.10.2.js}" src="/Scripts/jquery-1.10.2.js"></script>
+    <script th:src="@{/public/js/bootstrap.js}" src="/Scripts/bootstrap.js"></script>
+    <script th:src="@{/public/js/respond.js}" src="/Scripts/respond.js"></script>
+</div>
+
+</body>
+</html>
